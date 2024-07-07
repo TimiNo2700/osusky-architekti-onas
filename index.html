@@ -73,6 +73,29 @@
             display: none; /* Hide the menu icon by default */
             transition: transform 0.3s ease; /* Smooth transformation */
         }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items in column */
+            height: calc(100vh - 100px); /* Adjusted height to keep content centered */
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px; /* Added margin to move content down */
+        }
+        .content h2 {
+            font-size: 2.5em; /* Increase font size */
+            margin-bottom: 20px; /* Add some space below the heading */
+        }
+        .content p {
+            font-size: 1.4em; /* Increase font size of paragraphs */
+            line-height: 1.8; /* Increase line height for readability */
+            margin-bottom: 20px; /* Add space below paragraphs */
+        }
+        .content img {
+            max-width: 20%; /* Adjusted max-width to make image smaller */
+            margin-top: 20px; /* Add space between text and image */
+        }
         @media only screen and (max-width: 768px) {
             .menu-icon {
                 display: flex; /* Display the menu icon for smaller screens */
@@ -113,7 +136,6 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-       
         }
     </style>
 </head>
@@ -138,6 +160,17 @@
         <div class="menu-icon">&#9776;</div> <!-- Menu icon symbol -->
     </header>
 
+    <section class="content">
+        <div>
+            <h2>O nás</h2>
+            <p>
+                Pôsobiaci od roku 1998 ponúka komplexné architektonické služby, urbanizmus a interiérový dizajn.<br>
+                Úzko spolupracujeme s klientmi na premene ich vízií na realitu. Pyšníme sa na poskytovaní udržateľných riešení, ktoré spĺňajú špecifické potreby a ašpirácie každého projektu.
+            </p>
+            <img src="https://raw.githubusercontent.com/TimiNo2700/osusky-architekti-onas/main/Logoanapis.png" alt="Logo" style="max-width: 15%; margin-top: 20px;">
+        </div>
+    </section>
+
     <footer>
         <p> &copy; 2024 Osuský Architekti, s.r.o. All rights reserved.</p>
     </footer>
@@ -154,3 +187,4 @@
     </script>
 </body>
 </html>
+
